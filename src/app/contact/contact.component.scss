@@ -1,0 +1,55 @@
+$error: rgba(246, 6, 3, 0.8);
+$button: rgb(111, 0, 255);
+$valid: rgba(14, 175, 14, 0.9);
+
+label {
+  display: block;
+  margin: 1.5em auto;
+
+  input, textarea {
+    display: block;
+    width: 30%;
+    padding: 1em;
+    margin: .5em 0;
+  }
+
+  .error {
+    display: inline-block;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: $error;
+    color: #ffffff;
+  }
+}
+
+code {
+  color: $valid;
+  font-weight: bolder;
+}
+
+.form-output {
+  margin: 1em auto;
+
+  .flexed {
+    display: grid;
+    grid-template-columns: 15% auto;
+    word-wrap: break-word;
+    width: 40%;
+
+    strong, span {
+      display: block;
+      padding: .5em;
+    }
+  }
+}
+
+.cta {
+  display: block;
+  padding: 1em;
+  text-transform: uppercase;
+  background-color: darken($button, 10%);
+  border-radius: .4em;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
