@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
-$primary: rgb(111, 0, 255);
-
 * {
   li { list-style: none; }
   a  { text-decoration: none; }
@@ -18,44 +16,6 @@ body {
 section {
   padding: 2rem;
   margin: 0 auto;
-}
-
-header {
-  background: $primary;
-  font-size: 16px;
-
-  nav {
-    display: flex;
-    max-width: 86%;
-    margin: 0 auto;
-    word-wrap: break-word;
-    justify-content: space-between;
-
-    a {
-      color: white;
-      text-decoration: none;
-      line-height: 100%;
-
-      &.navbar-logo {
-        font-size: 20px;
-        font-weight: bold;
-      }
-    }
-
-    ul {
-      display: flex;
-      list-style-type: none;
-
-      li {
-        a {
-         padding: 1rem;
-         &:hover {
-           background: darken($primary, 10%);
-         }
-       }
-      }
-    }
-  }
 }
 
 main {

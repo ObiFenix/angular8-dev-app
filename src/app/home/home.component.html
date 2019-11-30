@@ -1,14 +1,12 @@
 <div class="container">
-  <h1 [ngStyle]="{ 'color' : users ? 'black' : 'gray' }">
-    Dashboard
-  </h1>
+  <h1>Dashboard</h1>
 
-  <h3 *ngIf="!users">
+  <h2 *ngIf="!users">
     Users List not Available!
-  </h3>
+  </h2>
 
-  <ul *ngIf="users" class="profile">
-    <li *ngFor="let user of users.data">
+  <ul *ngIf="users">
+    <li *ngFor="let user of users['data']">
       <img [src]="user.avatar" alt="User's Avatar" />
       <p>{{ user.first_name }} {{ user.last_name }}</p>
     </li>

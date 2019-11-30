@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  title: string = 'DEVAPPs';
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

@@ -1,29 +1,29 @@
 <div class="container">
-    <h1>CONTACT US</h1>
+  <h1>Contact Us</h1>
 
-    <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
-      <code *ngIf="success"> Valid FORM!</code>
+  <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+    <code *ngIf="success"> Valid FORM!</code>
 
-      <label for="name">Name:
-        <input type="text" formControlName="name">
-        <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
-          <small *ngIf="messageForm.controls.name.errors.required">* Name field cannot be blacnk</small>
-        </div>
-      </label>
+    <label for="name">Name:
+      <input type="text" formControlName="name">
+      <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+        <small *ngIf="messageForm.controls.name.errors.required">* Name field cannot be blacnk</small>
+      </div>
+    </label>
 
-      <label for="name">Message:
-        <textarea formControlName="message" rows="8" cols="80"></textarea>
-        <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
-          <small *ngIf="messageForm.controls.message.errors.required">* Message field is required</small>
-        </div>
-      </label>
+    <label for="name">Message:
+      <textarea formControlName="message" rows="8" cols="80"></textarea>
+      <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
+        <small *ngIf="messageForm.controls.message.errors.required">* Message field is required</small>
+      </div>
+    </label>
 
-      <input type="submit" value="SEND MESSAGE" class="cta">
+    <input type="submit" value="SEND MESSAGE" class="cta">
 
-    </form>
-</div>
+  </form>
 
-<div *ngIf="submitted" class="container form-output">
+
+  <div *ngIf="submitted" class="form-output">
   <div class="flexed">
     <strong>Name: </strong>
     <span>{{ messageForm.controls.name.value }}</span>
@@ -32,4 +32,4 @@
     <strong>Message: </strong>
     <span>{{ messageForm.controls.message.value }}</span>
   </div>
-</div>
+  </div>

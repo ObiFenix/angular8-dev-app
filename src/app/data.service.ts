@@ -8,9 +8,6 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  ngOnInit() {
-  }
-
   getUsers() {
     return this.http.get('https://reqres.in/api/users');
   }
